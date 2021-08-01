@@ -32,3 +32,8 @@ Route::get('/contact', function () {
 Route::get('/about', function () {
 	return view('about');
 });
+
+# Display page -> Character display
+Route::get('/display', function() {
+	return view('display');
+});
