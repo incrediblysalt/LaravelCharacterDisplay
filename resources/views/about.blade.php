@@ -2,7 +2,12 @@
 
 @section('content')
 	<h1>About Us</h1>
-	<button type="button" onclick="location.href = '/home';">Back to Home</button>
+	
 @endsection
 
 @section('sidebar')
+	@parent
+	<input type="image" src="home.png"/ onclick="location.href = '/home';">
+	<input type="image" src="home.png"/ onclick="location.href = '/display';">
+	<input type="image" src="contact.png"/ onclick="location.href = '/contact';">
+@endsection
