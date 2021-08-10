@@ -6,10 +6,12 @@
 		
 		<style>
 			.sidebar {
-				background-image: url("test.png");
-				width: 350px;
-				margin-bottom: 10px;
+				background-image: url("sidebar6.png");
+				width: 800px;
+				margin-left: -1px;
+				margin-bottom: -25px;
 				padding: 10px;
+				padding-bottom: 20px;
 			}
 			
 			.wrapper {
@@ -23,8 +25,15 @@
 				border-radius: 25px;
 			}
 			
+			.box {
+				background-color: #FFA07A;
+				border-radius: 25px;
+				padding: 10px;
+				padding-left: 15px;
+			}
+			
 			.display {
-				background-color: #95d0f5;
+				background-image: linear-gradient(to bottom, #ffa785, #ba623f);
 				left: 50%;
 				top: 50%;
 				padding: 10px;
@@ -42,6 +51,13 @@
 				justify-content: center;
 				align-items: center;
 				margin-top: -5px;
+				padding: 10px;
+				padding-bottom: 0px;
+			}
+			
+			.image img {
+				max-width: 100%;
+				height: auto;
 			}
 			
 			.content {
@@ -49,14 +65,14 @@
 				padding-bottom: 1px;
 			}
 			
-			ul {
-				padding-left: 12%;
-			}
-			
 			.display h1 {
 				color: #474747;
 				border-bottom: 1px solid black;
 				padding-bottom: 10px;
+			}
+			
+			body {
+				font-family: 'Trebuchet MS', sans-serif;
 			}
 		</style>
 	</head>

@@ -31,16 +31,23 @@
 						echo "<h1>" . $row['firstName'] . " " . $row['lastName'] . "</h1></div>";
 						
 						// Create image div
-						echo "<div class='image'><img src='{$row['path']}' width='75%' height='75%'></div>";
+						echo "<div class='image'><img src='{$row['path']}' style='border: 5px solid white;'></div>";
 						
 						// Create content div
 						echo "<div class='content'><ul>";
-						echo "<li>Class: " . $row['class'];
-						echo "<li>Level: " . $row['level'];
-						echo "<li>Health: " . $row['hp'];
-						echo "<li>Age: " . $row['age'];
-						echo "<li>Height: " . $row['height'];
-						echo "<li>Description: " . $row['description'];
+						echo "<li><span style='font-weight: bold;'>Class:</span> " . $row['class'];
+						echo "<li><span style='font-weight: bold;'>Level:</span> " . $row['level'];
+						echo "<li><span style='font-weight: bold;'>Health:</span> " . $row['hp'];
+						echo "<li><span style='font-weight: bold;'>Age:</span> " . $row['age'];
+						echo "<li><span style='font-weight: bold;'>Height:</span> " . $row['height'];
+						echo "<li><span style='font-weight: bold;'>Description:</span> ";
+						
+						$fh = fopen($row['description'],'r');
+						while ($line = fgets($fh)) {
+							echo ($line);
+						}
+						fclose($fh);
+						
 						echo "</ul></div> </div>";
 					}
 				}
@@ -59,7 +66,7 @@
 
 @section('sidebar')
 	@parent
-	<input type="image" src="home.png"/ onclick="location.href = '/home';">
-	<input type="image" src="contact.png"/ onclick="location.href = '/contact';">
-	<input type="image" src="about.png"/ onclick="location.href = '/about';">
+	<input width="20%" type="image" src="home_button.png"/ onclick="location.href = '/home';">
+	<input width="20%" type="image" src="contact_button.png"/ onclick="location.href = '/contact';">
+	<input width="20%" type="image" src="about_button2.png"/ onclick="location.href = '/about';">
 @endsection
