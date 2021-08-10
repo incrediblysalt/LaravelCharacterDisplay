@@ -66,7 +66,7 @@
 
 @section('sidebar')
 	@parent
-	<input width="20%" type="image" src="home_button.png"/ onclick="location.href = '/home';">
-	<input width="20%" type="image" src="contact_button.png"/ onclick="location.href = '/contact';">
-	<input width="20%" type="image" src="about_button2.png"/ onclick="location.href = '/about';">
+	<input class="btn" type="image" src="home_button.png"/ onclick="location.href = '/home';">
+	<input class="btn" type="image" src="about_button2.png"/ onclick="location.href = '/about';">
+	<input class="btn" type="image" src="contact_button.png"/ onclick="location.href = '/contact';">
 @endsection

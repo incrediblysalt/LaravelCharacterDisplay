@@ -6,10 +6,10 @@
 		
 		<style>
 			.sidebar {
-				background-image: url("sidebar6.png");
-				width: 800px;
-				margin-left: -1px;
-				margin-bottom: -25px;
+				max-width: 1160px;
+				margin: auto;
+				margin-bottom: -10px;
+				min-height: 30px;
 				padding: 10px;
 				padding-bottom: 20px;
 			}
@@ -23,6 +23,8 @@
 				padding: 10px;
 				grid-gap: 20px;
 				border-radius: 25px;
+				max-width: 1160px;
+				margin: auto;
 			}
 			
 			.box {
@@ -30,6 +32,8 @@
 				border-radius: 25px;
 				padding: 10px;
 				padding-left: 15px;
+				max-width: 1160px;
+				margin: auto;
 			}
 			
 			.display {
@@ -44,6 +48,7 @@
 				display: flex;
 				justify-content: center;
 				align-items: center;
+				font-size: max(1vw, 14px);
 			}
 			
 			.image {
@@ -69,6 +74,12 @@
 				color: #474747;
 				border-bottom: 1px solid black;
 				padding-bottom: 10px;
+			}
+			
+			.btn {
+				width: 145px;
+				min-width: 20%;
+				max-width: 100%;
 			}
 			
 			body {
